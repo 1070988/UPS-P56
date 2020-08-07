@@ -1,15 +1,18 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Jun 16 12:21:23 2020
+Created on Wed Jul  8 15:02:57 2020
 
-@author: Andrés
+@author: Fernando
 """
 
-pi=22/7
-print(pi)
-print("/n"*2)
-print("{:.6f}".format(pi))
-print("/n"*2)
-print("{:.4f}".format(pi))
-print("/n"*2)
-print("{:.7f}".format(pi))
+
+def isYearLeap(year):
+    while True:
+        isYearLeap=int(input("ingrese de que año desea obtener informacion"))
+        if isYearLeap%4==0:
+            if isYearLeap>=1500 or isYearLeap<=2100:
+                print("el año: ",isYearLeap," es un año bisiesto")
+            else:
+                print("el año: ",isYearLeap," no es un año bisiesto")
+                
+                
